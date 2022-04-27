@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+@keyframes entrar-salir{
+0%{background-color: black;}
+50%{background-color: gray;}
+
+}
+body {
+    background-color: red;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;  
+    flex-flow: row wrap; 
+    width: 100%;
+}
+/* Estilos del header */
+header {
+    display: flex;
+    padding: 10px;
+    width: 100vw;
+    height: 30vh;
+    flex-direction: row;
+    border: 3px black solid;
+    background-image: url(/assets/ducks3);
+    background-size: cover;
+}
+
+
+.title-header{
+    
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: gold;
+    font-size: 400%;
+    text-shadow: 0.2vw 0.2vh 0 red;
+    margin-left: 33vw;
+
+}
+
+
+.header-sec {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    /* nuevo */
+    width: 100vw;
+
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%; 
+    height: 6vh;
+    animation: entrar-salir 5s ease infinite;
+    
+}
+
+.header-logo{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Fin de estilos header */
+
+/* Estilos Main */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:100vh;
+    justify-content:flex-start;
+    margin: 20px;
+    box-sizing: content-box;
+    background-image: url(../assets/rojoamarillo.jpg);
+    background-size: cover;   
+}
+
+
+h2{
+    color: black;
+    font-size: 50px;
+}
+
+
+/* Estilos Nav Bar */
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vh;
+
+}
+
+
+.nav-bar div:hover{
+background-color: red;
+transform: rotate(20deg);
+
+}
+
+
+.nav-bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    border-radius: 20px;
+    border: 4px black solid;
+    background-color: rgba(228, 88, 23, 0.87);
+    margin: 25px;
+    transition: all 1s ease;
+}
+
+.link-nav {
+    padding: 14px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Main container styles */
+/* nuevo */
+.main-container {
+    display: flex;
+    /* nuevo */
+    flex-direction: column;
+    margin: 30px;
+    position: absolute;
+    margin-left: 35vw; 
+    
+}
+.main-container dt {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+
+}
+
+.main-container dd {
+    margin: 15px;
+}
+
+/* Fin estilos main */
+
+#mdhl_1{
+    display: flex;
+    /* nuevo */
+    justify-content:center;
+    width: 20vw;
+    border-radius: 20px;
+    border: 5px black solid;
+ 
+}
+
+#mdhl_2{
+    display: flex;
+    /* nuevo */
+    justify-content:center;
+    width: 10vw;
+    border-radius: 20px;
+    border: 5px gold solid;
+ 
+}
+
+/* estilos footer */
+
+footer {
+    display: flex;
+    /* nuevo */
+    justify-content:center;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+
+}
+
+footer p {
+    display: flex; 
+    align-items: center;
+    color: rgb(255, 217, 0);
+}
+
+/* Fin estilos footer */
+
+
+/* Styles Rules */
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles-first {
+    padding-bottom: 20px;
+}
+
+.second-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-div dd {
+    padding: 10px;
+    margin-left: 35px;
+}
+
+li{
+    padding: 5px;
+}
+
+/*Styles Rules */
+
+
+/* Table styles */
+
+.table-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_header {
+    background-color: black;
+    color: yellow;
+    font-size: 2vw;
+    
+}
+
+th {
+    padding: 1vw;
+    border: 1px solid;
+}
+
+.tr_body:hover {
+    background-color: gold;
+
+}
+td{
+    border: 1px so;
+}
+
+
+tbody {
+    background-color: none;
+    text-align: center;
+}
+
+.dates {
+    background-color: red;
+    border: 1px solid;
+    
+}
+
+/* Table Styles */
+.visually_hidden {
+background-color: brown;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Registration Styles */
+
+form {
+    color: black;
+    margin-left: 10vw;
+    margin-bottom: 4vh;
+    width: 50vw;
+  }
+  
+  input {
+    margin-bottom: 2vh;
+    padding: 1vh 1vw;
+  }
+  
+  .visually_hidden {
+    display: none;
+  }
+  
+  .form_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form_text_input {
+    border: none;
+    border-bottom: 2px solid gold;
+    background: transparent;
+    color: black;
+    width: 100%;
+  }
+  
+  .custom_radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .custom_radio_indicator {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: dimgray;
+    border-radius: 3px;
+  }
+  
+  .custom_radio_input:checked ~ .custom_radio_indicator {
+    background-color: gold;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .custom_checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .custom_checkbox_indicator {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: black;
+    border-radius: 3px;
+  }
+  
+  .custom_checkbox_input:checked ~ .custom_checkbox_indicator {
+    background-color: gold;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .custom_select select {
+    color: black;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gold;
+    padding: 1vh 0;
+  }
+  
+  .custom_select option {
+    background-color: black;
+    color: black;
+    padding: 1vh 1vh;
+    margin: 2vh 0;
+  }
+  
+  .custom_select option[value="null"] {
+    display: none;
+  }
+  
+  #gender_container {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #gender_container p {
+    margin-right: 0.5vw;
+    margin-bottom: 1vh;
+    display: inline-block;
+  }
+  
+  #grade_container {
+    height: 4vh;
+    margin-bottom: 0.5vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #grade_container p {
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    display: inline-block;
+  }
+  
+  #positions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #midfielder {
+    margin-right: 1.8vw;
+  }
+  
+  #size_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #which_school {
+    margin-top: 25vh;
+  }
+  
+  form h3 {
+    color: black;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+  }
+  
+  form p {
+    margin-left: 0;
+  }
+  
+  input[type="submit"] {
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+    background-color: gold;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: dimgray;
+    color: black;
+  }
+  
+  #table_show_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #table_show_data h2 {
+    align-self: center;
+  }
+  
+  #table_show_data table {
+    align-self: center;
+    margin-right: 15%;
+  }
+  
